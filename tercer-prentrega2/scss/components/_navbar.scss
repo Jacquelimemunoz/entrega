@@ -1,0 +1,43 @@
+@import '../utilidades/mixins';
+.navbar {
+    @include flex-center;
+    background-color: $primary-color; 
+    padding: 10px 20px;
+    height: 170px;
+
+    .logo {
+        img {
+            height: 100%; 
+            width: 100%;
+            margin-top: -10px; 
+        }
+    }
+
+    .burger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+
+        .line {
+            height: 3px;
+            width: 25px;
+            background-color: white; 
+            margin: 4px 0;
+        }
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+
+        li {
+            margin: 0 55px;
+            margin-bottom: 40px;
+
+            a {
+                color: white; 
+                text-decoration: none;
+            }
+        }
+    }
+}
